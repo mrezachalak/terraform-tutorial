@@ -1,16 +1,16 @@
 module "ec2_babak" {
   source = "./module/ec2"
 
-  instance_name = "v011"
-  key_name      = "dvh"
+  instance_name = var.machine_name
+  key_name      = var.key_name
 }
 
 
 module "ec2_babak2" {
   source = "./module/ec2"
 
-  instance_name = "v011_2"
-  key_name      = "dvh"
+  instance_name = var.machine_name
+  key_name      = var.key_name
 }
 
 
