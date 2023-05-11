@@ -2,6 +2,7 @@ module "ec2_babak" {
   source = "./module/ec2"
 
   instance_name = var.machine_name
+  instance_type = var.instance_type
   key_name      = var.key_name
   ami = var.ami_id
 }
@@ -11,6 +12,7 @@ module "ec2_babak2" {
   source = "./module/ec2"
 
   instance_name = var.machine_name
+  instance_type = var.instance_type
   key_name      = var.key_name
   ami = var.ami_id
 }
