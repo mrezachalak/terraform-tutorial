@@ -3,6 +3,7 @@ module "ec2_babak" {
 
   instance_name = var.machine_name
   key_name      = var.key_name
+  ami = var.ami_id
 }
 
 
@@ -11,6 +12,7 @@ module "ec2_babak2" {
 
   instance_name = var.machine_name
   key_name      = var.key_name
+  ami = var.ami_id
 }
 
 
